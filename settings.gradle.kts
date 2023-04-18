@@ -1,4 +1,4 @@
-rootProject.name = "basic-kafka-streams-demo"
+rootProject.name = "creek_connect_services"
 
 include(
     "api",

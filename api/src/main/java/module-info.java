@@ -1,14 +1,14 @@
-import io.github.creek.service.basic.kafka.streams.demo.api.BasicKafkaStreamsDemoAggregateDescriptor;
+import io.github.nathensample.creek.connect.services.api.CreekConnectServicesAggregateDescriptor;
 import org.creekservice.api.platform.metadata.ComponentDescriptor;
 
-module basic.kafka.streams.demo.api {
+module creek.connect.services.api {
     requires transitive creek.kafka.metadata;
 
-    exports io.github.creek.service.basic.kafka.streams.demo.api;
-    exports io.github.creek.service.basic.kafka.streams.demo.internal to
-            basic.kafka.streams.demo.services,
-            basic.kafka.streams.demo.service;
+    exports io.github.nathensample.creek.connect.services.api;
+    exports io.github.nathensample.creek.connect.services.internal to
+            creek.connect.services.services,
+            creek.connect.services.service;
 
     provides ComponentDescriptor with
-            BasicKafkaStreamsDemoAggregateDescriptor;
+            CreekConnectServicesAggregateDescriptor;
 }
